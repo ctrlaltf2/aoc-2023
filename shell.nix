@@ -20,5 +20,9 @@ stdenv.mkDerivation {
     name = "moz_overlay_shell";
     buildInputs = [
         rustStableChannel
+        aoc-cli
+    ];
+    nativeBuildInputs = [
+        nixpkgs.openssl.dev
     ];
 }
